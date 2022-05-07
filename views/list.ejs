@@ -7,15 +7,27 @@
     <title>To Do List</title>
   </head>
   <body>
-    <h1><%= day %></h1>
-    <ul>
+    <div class="box" id="heading">
+      <h1><%= day %></h1>
+    </div>
+
+    <div class="box">
       <% items.forEach(function(item) { %>
-      <li><%= item %></li>
+      <div class="item">
+        <input type="checkbox" />
+        <p><%= item %></p>
+      </div>
       <% }) %>
-    </ul>
-    <form method="POST">
-      <input type="text" name="newItem" />
-      <button type="submit">Add</button>
-    </form>
+
+      <form class="item" method="POST">
+        <input
+          type="text"
+          name="newItem"
+          placeholder="New Item"
+          autocomplete="off"
+        />
+        <button type="submit">+</button>
+      </form>
+    </div>
   </body>
 </html>

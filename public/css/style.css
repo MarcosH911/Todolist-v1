@@ -5,7 +5,7 @@ html {
 
   min-height: 1000px;
 
-  font-family: "helvetica neue";
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 h1 {
@@ -56,6 +56,10 @@ input[type="checkbox"] {
   margin: 20px;
 }
 
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
 p {
   margin: 0;
 
@@ -92,6 +96,10 @@ button {
   padding-bottom: 6px;
 
   border-width: 0;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 input[type="text"] {

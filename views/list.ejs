@@ -7,9 +7,14 @@
   </head>
   <body>
     <h1><%= day %></h1>
+    <ul>
+      <% items.forEach(function(item) { %>
+      <li><%= item %></li>
+      <% }) %>
+    </ul>
     <form method="POST">
-      <input type="text" />
-      <input type="submit" value="submit" />
+      <input type="text" name="newItem" />
+      <input type="submit" value="Add" />
     </form>
   </body>
 </html>
